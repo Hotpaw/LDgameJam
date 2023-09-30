@@ -19,11 +19,19 @@ public class FallingObjects : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        CreateFallingObjects();
+    }
 
+    private void CreateFallingObjects()
+    {
         if (timer > cooldown)
         {
-            int random = Random.Range(0, SpawnPoints.Length);
-            GameObject fObject = Instantiate(gameObject, SpawnPoints[random].position, Quaternion.identity);
+            int randomTransformSpawnPoint = Random.Range(0, SpawnPoints.Length);
+            int randomFallingGameObject = Random.Range(0, fallingObjects.Length);
+
+            GameObject fObject = Instantiate(fallingObjects[randomFallingGameObject], SpawnPoints[randomTransformSpawnPoint].position, Quaternion.identity);
+
+            timer = 0;
         }
     }
 }
