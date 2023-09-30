@@ -8,5 +8,5 @@ using UnityEngine.Events;
 public class EventOnTrigger : MonoBehaviour
 {
     public UnityEvent eventOnTrigger;
-    public string
+    public string tag
 }
