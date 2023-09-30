@@ -5,7 +5,11 @@ using UnityEngine;
 public class TramSpawner : MonoBehaviour
 {
     public GameObject[] tramCarts;
+    public GameObject endCart;
     Transform cartPosition;
+    public int cartCreatedUntilLastTram;
+
+    public float tramOffset;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,6 @@ public class TramSpawner : MonoBehaviour
       
         GameObject cart = Instantiate(tramCarts[randomCart], cartPosition.position, Quaternion.identity);
 
-        cart.transform.position = new Vector2(0, cart.transform.position.y +19f);
+        cart.transform.position = new Vector2(0, cart.transform.position.y + tramOffset);
     }
 }
