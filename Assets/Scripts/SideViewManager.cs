@@ -12,14 +12,10 @@ public class SideViewManager : MonoBehaviour
     [SerializeField] Transform playerRoot;
     List<Vector3> positions = new List<Vector3>();
     List<Quaternion> rotations =  new List<Quaternion>();
+    [SerializeField] GameObject tdview, sview;
     private void Awake()
     {
         SetPositions();
-    }
-    private void OnEnable()
-    {
-        CreateNewObstacle();
-        ResetPositions();
     }
 
     public void CreateNewObstacle()
@@ -47,6 +43,34 @@ public class SideViewManager : MonoBehaviour
             t.position = positions[i];
             t.rotation = rotations[i];
             i++;
+        }
+    }
+
+
+
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ToggleView();
+        }
+    }
+
+    public void ToggleView()
+    {
+        if (tdview.activeSelf)
+        {
+            tdview.SetActive(false);
+            sview.SetActive(true);
+
+            CreateNewObstacle();
+            ResetPositions();
+        }
+        else
+        {
+            tdview.SetActive(true);
+            sview.SetActive(false);
         }
     }
 
