@@ -19,19 +19,31 @@ public class TramController : MonoBehaviour
     private void Start()
     {
         gforceAffected = FindObjectsOfType<GForce>();
+
+        RandomTurn();
+    }
+
+    private void RandomTurn()
+    {
+        int randomIndex = Random.Range(0, System.Enum.GetNames(typeof(Direction)).Length);
+        turn = (Direction)randomIndex;
+
+        int turnDelay = Random.Range(5, 10);
+
+        Invoke(nameof(SharpTurnWarning), turnDelay);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            TurnOffWarning();
+            TurnDone();
             turn = Direction.right;
             SharpTurnWarning();
         }
         else if (Input.GetKeyDown(KeyCode.Q))
         {
-            TurnOffWarning();
+            TurnDone();
             turn = Direction.left;
             SharpTurnWarning();
         }
@@ -53,12 +65,13 @@ public class TramController : MonoBehaviour
             affected.Push(turn == Direction.right ? Vector2.right : Vector2.left, force);
         }
 
-        Invoke(nameof(TurnOffWarning), warningDelay);
+        Invoke(nameof(TurnDone), warningDelay);
     }
 
-    private void TurnOffWarning()
+    private void TurnDone()
     {
         warningEvent.Invoke(false);
+        RandomTurn();
     }
 }
 //TODO: ADD 5-15 sec cooldown for turns, and perspective Bool
