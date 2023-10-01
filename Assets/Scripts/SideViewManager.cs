@@ -13,17 +13,35 @@ public class SideViewManager : MonoBehaviour
     List<Vector3> positions = new List<Vector3>();
     List<Quaternion> rotations =  new List<Quaternion>();
     [SerializeField] GameObject tdview, sview;
+
+    [SerializeField] GameObject box, bag;
+    public enum ObstacleType
+    {
+        box, bag
+    }
+    public ObstacleType type;
+
     private void Awake()
     {
         SetPositions();
     }
 
-    public void CreateNewObstacle()
+    public void CreateNewObstacle(ObstacleType type)
     {
         if(obstacle)
             Destroy(obstacle);
 
-        obstacle = Instantiate(obstacles[Random.Range(0, obstacles.Count)], spawnpoint);
+
+        switch (type)
+        {
+            case ObstacleType.box:
+                obstacle = Instantiate(box,spawnpoint);
+                break;
+            case ObstacleType.bag:
+                obstacle = Instantiate(bag, spawnpoint);
+                break;
+        }
+        //obstacle = Instantiate(obstacles[Random.Range(0, obstacles.Count)], spawnpoint);
     }
     void SetPositions()
     {
@@ -46,14 +64,14 @@ public class SideViewManager : MonoBehaviour
         }
     }
 
-    public void ToggleView()
+    public void ToggleView(ObstacleType type)
     {
         if (tdview.activeSelf)
         {
             tdview.SetActive(false);
             sview.SetActive(true);
 
-            CreateNewObstacle();
+            CreateNewObstacle(type);
             ResetPositions();
         }
         else

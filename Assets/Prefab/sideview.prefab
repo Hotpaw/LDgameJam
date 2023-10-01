@@ -131,15 +131,15 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.7685699, y: 2.1614501}
-  m_ConnectedAnchor: {x: -0.39226267, y: -2.0934937}
+  m_ConnectedAnchor: {x: -0.39226264, y: -2.0934935}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 15
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15.033125
-    m_UpperAngle: 27.083668
+    m_LowerAngle: -11.996391
+    m_UpperAngle: 7.3092537
 --- !u!58 &2288445671339756540
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -775,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 5405869009556817531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 175.95, y: -6.87, z: 0}
+  m_LocalPosition: {x: 177.34, y: -7.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1052,8 +1052,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 38.7
-    m_UpperAngle: 131.7
+    m_LowerAngle: 75.83188
+    m_UpperAngle: 107.57876
 --- !u!70 &7642478390754315230
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1219,7 +1219,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.13572693, y: 3.0403845}
+  m_ConnectedAnchor: {x: -0.13572693, y: 3.0403843}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1421,8 +1421,8 @@ Transform:
   m_GameObject: {fileID: 7904581229542413882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 181.13, y: -6.87, z: 0}
-  m_LocalScale: {x: 2.3764503, y: 2.022511, z: 2.022511}
+  m_LocalPosition: {x: 184.27, y: -7.23, z: 0}
+  m_LocalScale: {x: 7.0901985, y: 0.497219, z: 1.8080034}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4231463406735183022}
@@ -1492,6 +1492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWin: 1
+  type: 0
 --- !u!61 &1524948066099242844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1735,7 +1736,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.24205907, y: 1.6851505}
-  m_ConnectedAnchor: {x: -0.42044067, y: -2.4389744}
+  m_ConnectedAnchor: {x: -0.42044067, y: -2.4389749}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 10

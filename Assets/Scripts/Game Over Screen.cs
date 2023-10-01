@@ -9,4 +9,8 @@ public class GameOverScreen : MonoBehaviour
     {
         Time.timeScale = 0;
     }
+    public void unfreeze()
+    {
+        Time.timeScale = 1;
+    }
 }

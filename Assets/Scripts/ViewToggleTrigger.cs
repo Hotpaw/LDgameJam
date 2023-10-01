@@ -5,7 +5,7 @@ using UnityEngine;
 public class ViewToggleTrigger : MonoBehaviour
 {
     SideViewManager sideViewManager;
-
+    [SerializeField]SideViewManager.ObstacleType type;
 
     private void Start()
     {
@@ -14,6 +14,6 @@ public class ViewToggleTrigger : MonoBehaviour
 
     public void Toggle()
     {
-        sideViewManager.ToggleView();
+        sideViewManager.ToggleView(type);
     }
 }
