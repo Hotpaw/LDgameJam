@@ -12,7 +12,7 @@ public class sideViewObectCollision : MonoBehaviour
         if (collision.collider.CompareTag("Player")) 
         {
             if (isWin)
-                Debug.Log("return to topview");
+                FindObjectOfType<SideViewManager>().ToggleView();
             else
                 Debug.Log("insant death");
         }

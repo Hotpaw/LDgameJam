@@ -46,17 +46,6 @@ public class SideViewManager : MonoBehaviour
         }
     }
 
-
-
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            ToggleView();
-        }
-    }
-
     public void ToggleView()
     {
         if (tdview.activeSelf)

@@ -5,7 +5,6 @@ using UnityEngine;
 public class ViewToggleTrigger : MonoBehaviour
 {
     SideViewManager sideViewManager;
-    public Transform exitPoint;
 
 
     private void Start()
