@@ -14,10 +14,10 @@ public class SideViewManager : MonoBehaviour
     List<Quaternion> rotations =  new List<Quaternion>();
     [SerializeField] GameObject tdview, sview;
 
-    [SerializeField] GameObject box, bag;
+    [SerializeField] GameObject box, bag, cat;
     public enum ObstacleType
     {
-        box, bag
+        box, bag, cat
     }
     public ObstacleType type;
 
@@ -39,6 +39,9 @@ public class SideViewManager : MonoBehaviour
                 break;
             case ObstacleType.bag:
                 obstacle = Instantiate(bag, spawnpoint);
+                break;
+            case ObstacleType.cat:
+                obstacle = Instantiate (cat, spawnpoint);
                 break;
         }
         //obstacle = Instantiate(obstacles[Random.Range(0, obstacles.Count)], spawnpoint);
