@@ -35,18 +35,6 @@ public class TramController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TurnDone();
-            turn = Direction.right;
-            SharpTurnWarning();
-        }
-        else if (Input.GetKeyDown(KeyCode.Q))
-        {
-            TurnDone();
-            turn = Direction.left;
-            SharpTurnWarning();
-        }
     }
 
     public void SharpTurnWarning()
@@ -59,7 +47,6 @@ public class TramController : MonoBehaviour
 
     public void TurnTram()
     {
-        Debug.Log(turn);
         foreach (GForce affected in gforceAffected)
         {
             affected.Push(turn == Direction.right ? Vector2.right : Vector2.left, force);
@@ -74,4 +61,4 @@ public class TramController : MonoBehaviour
         RandomTurn();
     }
 }
-//TODO: ADD 5-15 sec cooldown for turns, and perspective Bool
+//TODO: add perspective Bool
