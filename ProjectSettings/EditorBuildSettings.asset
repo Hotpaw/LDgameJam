@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: dac5742218f42e345b9dec4c2c07d5d4
   - enabled: 1
+    path: Assets/Scenes/TopDownMovement.unity
+    guid: 21eabd54952842449b183216e37d9b50
+  - enabled: 0
     path: Assets/Scenes/MainGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
