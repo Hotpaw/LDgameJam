@@ -461,6 +461,22 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.16478121
       objectReference: {fileID: 0}
+    - target: {fileID: 7377224700064101268, guid: 89fbfffddc5979b45888874d0d53b8e0, type: 3}
+      propertyPath: moveDis
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377224700064101268, guid: 89fbfffddc5979b45888874d0d53b8e0, type: 3}
+      propertyPath: maxLimit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377224700064101268, guid: 89fbfffddc5979b45888874d0d53b8e0, type: 3}
+      propertyPath: moveFreq
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377224700064101268, guid: 89fbfffddc5979b45888874d0d53b8e0, type: 3}
+      propertyPath: lowerLimit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8242339896258771022, guid: 89fbfffddc5979b45888874d0d53b8e0, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -528,6 +544,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5312485512880548101, guid: 3e9711ad663b5c84bba33361797bf3c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730362683961787968, guid: 3e9711ad663b5c84bba33361797bf3c5, type: 3}
+      propertyPath: m_UpdateMethod
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8445169893134711269, guid: 3e9711ad663b5c84bba33361797bf3c5, type: 3}
