@@ -131,7 +131,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.7685699, y: 2.1614501}
-  m_ConnectedAnchor: {x: -0.39226267, y: -2.0934937}
+  m_ConnectedAnchor: {x: -0.39226264, y: -2.0934935}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 15
@@ -1219,7 +1219,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.13572693, y: 3.0403845}
+  m_ConnectedAnchor: {x: -0.13572693, y: 3.0403843}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1546,7 +1546,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1539267522511096581}
-  - component: {fileID: 1969725618898269448}
   m_Layer: 0
   m_Name: SideScrollMoment
   m_TagString: Untagged
@@ -1569,20 +1568,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4231463406735183022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1969725618898269448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263435691572956759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18812c1927352fb4481a95b5c696a28e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 0}
-  obstacles: []
 --- !u!1 &8836087789626206384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1621,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 882246881255946877}
   obstacles:
   - {fileID: 1083993279484347399, guid: 3c4001a615889034c8526e022cc36e09, type: 3}
+  playerRoot: {fileID: 135126724675701503}
 --- !u!1 &9033345851804121256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1752,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.24205907, y: 1.6851505}
-  m_ConnectedAnchor: {x: -0.42044067, y: -2.4389744}
+  m_ConnectedAnchor: {x: -0.42044067, y: -2.4389749}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 10
