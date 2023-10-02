@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8710368127770714409}
   - component: {fileID: 3900599985346034752}
   - component: {fileID: -7864304573635244930}
+  - component: {fileID: 4471798558762144125}
   m_Layer: 0
   m_Name: Top_Creature_2
   m_TagString: Untagged
@@ -119,4 +120,16 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.56
+  m_Radius: 0.92
+--- !u!114 &4471798558762144125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603504815324383955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f1fe5395b7f9e44a07e9fffb9f1a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

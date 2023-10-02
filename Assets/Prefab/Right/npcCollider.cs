@@ -9,7 +9,7 @@ public class npcCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameObject ui = GameObject.FindWithTag("UI");
+            GameObject.Find("UI").transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }

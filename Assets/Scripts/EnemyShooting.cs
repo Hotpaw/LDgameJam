@@ -21,10 +21,10 @@ public class EnemyShooting : MonoBehaviour
             Instantiate(spilledBeer, transform.position, Quaternion.identity);
             nextShotTime = Time.time + timeBetweenShots;
         }
-        if (Vector2.Distance(transform.position, target.position) < miniumDistance)
-        {
-            transform.position =  Vector2.MoveTowards(transform.position, target.position, -speed *Time.deltaTime);
-        }
+        //if (Vector2.Distance(transform.position, target.position) < miniumDistance)
+        //{
+        //    transform.position =  Vector2.MoveTowards(transform.position, target.position, -speed *Time.deltaTime);
+        //}
         
     }
 }

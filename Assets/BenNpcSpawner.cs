@@ -19,7 +19,7 @@ public class BenNpcSpawner : MonoBehaviour
 
         if (Direction == direction.RightFacing)
         {
-            int random = Random.Range(0, npcLeftFacing.Length);
+            int random = Random.Range(0, npcRightFacing.Length);
            GameObject npc = Instantiate(npcRightFacing[random], gameObject.transform.position, npcRightFacing[random].transform.localRotation);
             npc.transform.SetParent(transform);
             npc.transform.position += new Vector3(+0.5f, 0);
