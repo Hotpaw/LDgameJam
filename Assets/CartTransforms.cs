@@ -18,6 +18,7 @@ public class CartTransforms : MonoBehaviour
     public float moveDis;
     private void Start()
     {
+        moveFreq = Random.Range(1f, 1.5f);
         tramSpawner = FindObjectOfType<TramSpawner>();
         startPos = transform.position;
       
