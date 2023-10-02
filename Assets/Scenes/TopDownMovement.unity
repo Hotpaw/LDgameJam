@@ -236,9 +236,9 @@ MonoBehaviour:
   playerRoot: {fileID: 623472471}
   tdview: {fileID: 272573138}
   sview: {fileID: 2001129126}
-  box: {fileID: 0}
-  bag: {fileID: 0}
-  cat: {fileID: 0}
+  box: {fileID: 1083993279484347399, guid: d4c6d5cd559998f488ba1b7f680e4dc2, type: 3}
+  bag: {fileID: 1083993279484347399, guid: 3c4001a615889034c8526e022cc36e09, type: 3}
+  cat: {fileID: 1083993279484347399, guid: 3a9684504f17dc84d98248fbfb60a100, type: 3}
   type: 0
 --- !u!1 &272573138
 GameObject:
@@ -490,6 +490,18 @@ PrefabInstance:
     - target: {fileID: 692510752635951829, guid: 81b3f9f90eff5094990bb0a58d24a831, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: -1.9905937
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151062294732086102, guid: 81b3f9f90eff5094990bb0a58d24a831, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151062294732086102, guid: 81b3f9f90eff5094990bb0a58d24a831, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.7953354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151062294732086102, guid: 81b3f9f90eff5094990bb0a58d24a831, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.6650944
       objectReference: {fileID: 0}
     - target: {fileID: 2572943628003687262, guid: 81b3f9f90eff5094990bb0a58d24a831, type: 3}
       propertyPath: sview
