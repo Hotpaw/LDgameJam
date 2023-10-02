@@ -7,7 +7,8 @@ public class TramSpawner : MonoBehaviour
     public GameObject[] tramCarts;
     public GameObject endCart;
     Transform cartPosition;
-    public int cartCreatedUntilLastTram;
+     int cartCreatedUntilLastTram;
+    public int wincountTrams;
 
     public float tramOffset;
     // Start is called before the first frame update
@@ -23,6 +24,19 @@ public class TramSpawner : MonoBehaviour
     }
     public void CreateNewCart(CartTransforms transformOfTheCard)
     {
+        cartCreatedUntilLastTram++;
+        if (cartCreatedUntilLastTram == wincountTrams)
+        {
+            int randomCart1 = Random.Range(0, tramCarts.Length);
+
+            cartPosition = transformOfTheCard.topPosition;
+
+            GameObject cart1 = Instantiate(endCart, cartPosition.position, Quaternion.identity);
+
+            cart1.transform.position = new Vector2(0, cart1.transform.position.y + tramOffset);
+        }
+        else { 
+        
         int randomCart = Random.Range(0, tramCarts.Length);
 
         cartPosition = transformOfTheCard.topPosition;
@@ -30,5 +44,6 @@ public class TramSpawner : MonoBehaviour
         GameObject cart = Instantiate(tramCarts[randomCart], cartPosition.position, Quaternion.identity);
 
         cart.transform.position = new Vector2(0, cart.transform.position.y + tramOffset);
+        }
     }
 }
