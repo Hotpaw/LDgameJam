@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
                 break;
             case "restart":
                 SceneManager.LoadScene(scene.buildIndex, LoadSceneMode.Single);
+                Time.timeScale = 1;
                 break;
         }
     }

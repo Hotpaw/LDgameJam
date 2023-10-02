@@ -6,6 +6,7 @@ public class NpcList : MonoBehaviour
 {
     public GameObject[] npcRightFacing;
     public GameObject[] npcLeftFacing;
+    public GameObject[] npcSideView;
     // Start is called before the first frame update
     void Start()
     {
