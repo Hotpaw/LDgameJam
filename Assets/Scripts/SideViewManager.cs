@@ -34,9 +34,7 @@ public class SideViewManager : MonoBehaviour
 
         switch (type)
         {
-            case ObstacleType.box:
-                obstacle = Instantiate(box,spawnpoint);
-                break;
+            
             case ObstacleType.bag:
                 obstacle = Instantiate(bag, spawnpoint);
                 break;

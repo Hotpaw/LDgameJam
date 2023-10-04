@@ -38,11 +38,14 @@ public class TramController : MonoBehaviour
     }
 
     public void SharpTurnWarning()
-    {
-        warningText.text = "SHARP TURN!\r\n" + turn.ToString().ToUpper();
-        warningEvent.Invoke(true);
+    {if(warningText != null)
+        {
+            warningText.text = "SHARP TURN!\r\n" + turn.ToString().ToUpper();
+            warningEvent.Invoke(true);
 
-        Invoke(nameof(TurnTram), warningDelay);
+            Invoke(nameof(TurnTram), warningDelay);
+        }
+      
     }
 
     public void TurnTram()
